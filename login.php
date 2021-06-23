@@ -1,13 +1,13 @@
 <?php
     
     error_reporting(0);
-   session_start();
+    session_start();
 
     $html = <<<HTML
-    
+        
         <html lang='fr'>
             <head>
-                <title>Booxchange.com</title>
+                <title>omalimnegoce.com</title>
                 <meta charset='utf-8' />
             </head>
     
@@ -20,29 +20,30 @@
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">        
             
             <body>
+            
                 <form action="#" method="POST">
-                            <div class=' my-login-container'>
-                            <div class=' my-login-side-container'>
-                                <center><div class='my-connexion'>Connexion</div></center>
-                                <div class='my-input-explainer' >Nom D'etulisatuer:</div>
-                                <div >
-                                    <input class='my-input' type="text" name='username' placeholder='tapez votre nom detulisatuer' required>
-                                </div>
-                                <div class='my-input-explainer' >Mot de passe:</div>
-                                <div >
-                                    <input class='my-input' type="password" name='password' placeholder='tapez votre mot de passe' required>
-                                </div
-                                <div>
-                                    <button type="submit" class="my-btn mb-3" >
-                                        Connexion    
-                                    </button>
-                            </div>
+                    <div class=' my-login-container'>
+                        <div class=' my-login-side-container'>
                             <center>
+                                <div class='my-connexion'>Connexion</div>
+                            </center>
+                            <div class='my-input-explainer' >Nom D'etulisatuer:</div>
+                            <div >
+                                <input class='my-input' type="text" name='username' placeholder='tapez votre nom detulisatuer' required>
+                            </div>
+                            <div class='my-input-explainer' >Mot de passe:</div>
+                            <div >
+                                <input class='my-input' type="password" name='password' placeholder='tapez votre mot de passe' required>
+                            </div
+                            <div>
+                                <button type="submit" class="my-btn mb-3" >
+                                    Connexion    
+                                </button>
+                            </div>
+                        <center>
         
-        HTML;
+    HTML;
 
-
- 
     if(isset($_SESSION['username']) && isset($_SESSION['password'])){
         header('Location: dashboard.php');
     }else if(isset($_COOKIE['username']) && isset($_COOKIE['password'])){
@@ -55,6 +56,7 @@
         $password = $_COOKIE['password'];
         
         if($connection){
+            
             $db = mysqli_select_db($connection, $database);
                  
             if($db){
@@ -70,11 +72,10 @@
                         header('location: login.php');
                     }
                 }catch(Exception $ex){
-                        //echo $ex;
+                    //echo $ex;
                 }
             }
         }
-        
     }else if(isset($_POST['username']) && isset($_POST['password'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -87,26 +88,27 @@
             $connection = mysqli_connect($localhost,$user, $pass);
 
             if($connection){
+                
                 $db = mysqli_select_db($connection, $database);
 
                  if($db){
-                    $query = "SELECT * FROM admin WHERE username='$username' AND password='$password';";
-                    $result = mysqli_query($connection, $query);
-                    $row = mysqli_fetch_array($result);
-                    $num_rows = mysqli_num_rows($result);
-                        if($num_rows == 1){
-                                $_SESSION['username'] = $username;
-                                $_SESSION['password'] = $password;
-                                header('Location: dashboard.php');
-                        }else{
-                            header('Location: login.php');
-                        }
-                    }
-                }
+                
+                     $query = "SELECT * FROM admin WHERE username='$username' AND password='$password';";
+                     $result = mysqli_query($connection, $query);
+                     $row = mysqli_fetch_array($result);
+                     $num_rows = mysqli_num_rows($result);
+                     if($num_rows == 1){
+                    
+                         $_SESSION['username'] = $username;
+                         $_SESSION['password'] = $password;
+                         header('Location: dashboard.php');
+                     }else{
+                         header('Location: login.php');
+                     }
+                 }
             }
-        }else{
-
-
+        }
+    }else{
     $html .= <<<HTML
          
                                             </center>
