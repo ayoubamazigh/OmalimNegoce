@@ -172,11 +172,11 @@
                                     <table>
                                         <tr>
                                             <td>Service aluminium: &nbsp;</td>
-                                            <td><button class="btn my-btn-brahim my-2 my-sm-0" type="submit">Aluminium Industriel</button></td>
+                                            <td><a href="home.php?type=al"><button class="btn my-btn-brahim my-2 my-sm-0" type="submit">Aluminium Industriel</button></a></td>
                                         </tr> 
                                         <tr>
                                             <td><br>Inox Indestriel: &nbsp;</td>
-                                            <td><br><button class="btn my-btn-brahim my-2 my-sm-0"type="submit">Aluminium Industriel</button></td>
+                                            <td><br><a href="home.php?type=al"><button class="btn my-btn-brahim my-2 my-sm-0"type="submit">Inox Industriel</button></a></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -185,7 +185,7 @@
                     </div>
                         
                     <div class='col-lg-4 col-sm-12 bg-dark '>
-                        <div class='my-fotter-insider' >
+                        <div class='my-fotter-insider' 
                             <div class='my-fotter-insider' >
                                 contacter nos &nbsp;&nbsp;
                                 <div class='my-sep3' ></div>
