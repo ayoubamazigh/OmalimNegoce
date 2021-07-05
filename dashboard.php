@@ -277,7 +277,7 @@
                                         $inserted = mysqli_query($connection, $query);
                                         if($inserted){
                                            echo "<script> alert('Article ajouter'); </script>";
-                                            header('Location: login.php');
+                                            header('Location: dashboard.php');
                                         }else{
                                             echo "<script> alert('article n'a pas ajouté')</script>";
                                         }
