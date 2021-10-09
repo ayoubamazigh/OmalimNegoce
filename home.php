@@ -5,7 +5,7 @@
     $host = 'localhost';
     $user = 'root';
     $pass = '';
-    $database = 'omalimnegoce';
+    $database = 'Omalimnegoce';
 
     $connection = mysqli_connect($host, $user, $pass);
 
@@ -75,10 +75,6 @@
         $type = $_GET['type'];
             if(!empty($type)){
             
-            $host = 'localhost';
-            $user = 'root';
-            $pass = '';
-            $database = 'omalimnegoce';
             
             $connection = mysqli_connect($host,$user,$pass);
                 if($connection){

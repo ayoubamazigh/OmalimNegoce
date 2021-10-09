@@ -3,13 +3,14 @@
     error_reporting(0);
     session_start();
 
-    if(isset($_SESSION['username']) && isset($_SESSION['password'])){
-        
         $host = 'localhost';
         $user = 'root';
         $pass = '';
         $database = 'omalimnegoce';
-        
+
+
+    if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+
         $connection = mysqli_connect($host, $user, $pass);
         
         if($connection){
@@ -104,10 +105,7 @@
                             <center><select name="my-delete-select" class='admin-select'>    
                                 <?php
 
-                                    $host = 'localhost';
-                                    $user = 'root';
-                                    $pass = '';
-                                    $database = 'omalimnegoce';
+                                    
 
                                     $connection = mysqli_connect($host, $user, $pass);
                                 
@@ -135,10 +133,6 @@
                     
                                         if(!empty($selectdeletearticle)){
                                             
-                                            $host = 'localhost';
-                                            $user = 'root';
-                                            $pass = '';
-                                            $database = 'omalimnegoce';
                                             $connection = mysqli_connect($host, $user, $pass);
 
                                             if($connection){
@@ -259,12 +253,8 @@
                                 $newimgname = uniqid("IMG-", true) . "." . $imgextention;
                                 $imguploadpath = "Uploaded/" . $newimgname;
                                 move_uploaded_file($imgpath, $imguploadpath);
-                                $localhost = 'localhost';
-                                $user = 'root';
-                                $pass = '';
-                                $database = 'omalimnegoce';
                                 
-                                $connection = mysqli_connect($localhost,$user, $pass);
+                                $connection = mysqli_connect($host,$user, $pass);
 
                                 if($connection){
                                     

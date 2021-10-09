@@ -44,13 +44,16 @@
         
     HTML;
 
+        $host = 'localhost';
+    $user = 'root';
+    $pass = '';
+    $database = 'Omalimnegoce';
+
     if(isset($_SESSION['username']) && isset($_SESSION['password'])){
         header('Location: dashboard.php');
     }else if(isset($_COOKIE['username']) && isset($_COOKIE['password'])){
-        $localhost = 'localhost';
-        $user = 'root';
-        $pass = '';
-        $database = 'omalimnegoce';
+        
+        
         $connection = mysqli_connect($localhost,$user, $pass);
         $username = $_COOKIE['username'];
         $password = $_COOKIE['password'];
@@ -81,10 +84,7 @@
         $password = $_POST['password'];
 
         if(!empty($username) && !empty($password)){
-            $localhost = 'localhost';
-            $user = 'root';
-            $pass = '';
-            $database = 'omalimnegoce';
+            
             $connection = mysqli_connect($localhost,$user, $pass);
 
             if($connection){
