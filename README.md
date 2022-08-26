@@ -7,7 +7,10 @@
 <div>live preview: <a href='https://omalim.000webhostapp.com/' >omalimnegocesarl.com</a></div>
 
 #creator: ayoub amazigh
+<br>
 email: <a href='mailto:ayoub.io.me@gmail.com' >ayoub.io.me@gmail.com</a>
+<br>
 linkedin: <a href='https://www.linkedin.com/in/ayoub-amazigh-a4002020b/' >ayoub amazigh</a>
+<br>
 facebook: <a href='https://www.facebook.com/Ayoub.fx.dev/' >ayoub abe</a>
 
