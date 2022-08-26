@@ -5,8 +5,7 @@
  TECHOLOGIES: HTML5, CSS3, BOOTSTRAP, native PHP, MySql :)
  
 <div><h4>live preview: <a href='https://omalim.000webhostapp.com/' >omalimnegocesarl.com</a></div>
-<br>
-<br>
+
 #creator: ayoub amazigh
 <br>
 email: <a href='mailto:ayoub.io.me@gmail.com' >ayoub.io.me@gmail.com</a>
