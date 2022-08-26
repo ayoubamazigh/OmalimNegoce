@@ -5,7 +5,7 @@
     $host = 'localhost';
     $user = 'root';
     $pass = '';
-    $database = 'Omalimnegoce';
+    $database = 'omalimnegoce';
 
     $connection = mysqli_connect($host, $user, $pass);
 
@@ -13,12 +13,12 @@
         $db = mysqli_select_db($connection, $database);
 
         if($db){ 
-            $query1 = "SELECT num_visitors FROM admin;";
+            $query1 = "SELECT num_visitors FROM stats;";
             $result1 = mysqli_query($connection, $query1);
             $row1 = mysqli_fetch_array($result1);
             $num_visitors = $row1[0] + 1;
             
-            $query2 = "UPDATE admin set num_visitors = '$num_visitors'";
+            $query2 = "UPDATE stats set num_visitors = '$num_visitors'";
             mysqli_query($connection, $query2);
                                 
         }
@@ -34,12 +34,11 @@
         </head>
             <link rel='icon' href='' >
             <link href="assest/css/bootstrap.css" rel="stylesheet" >
-            <link href='assest/css/index-style.css' rel='stylesheet'>
         <link href='assest/css/home-style.css' rel='stylesheet'>
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">        
+            <link href='assest/css/index-style.css' rel='stylesheet'>
+          <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;800&display=swap" rel="stylesheet">
+        	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet"> 
+			<link rel="shortcut icon" href='assest/img/20210614_150512.png' />       
         <body>
             
             <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
@@ -52,6 +51,15 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.php">accueil</a>
                         </li>
+						<li class="nav-item">
+							<a class="nav-link " href="#notreservices">notre services</a>
+                        </li>
+						<li class="nav-item">
+							<a class="nav-link " href="#contacternos">contacter nos</a>
+                        </li>
+						<li class="nav-item">
+							<a class="nav-link " href="#Proposdenous">à Propos de nous</a>
+						</li>
                     </ul>
                     <form class="form-inline my-lg-0 ">
                         <button class="btn my-btn-brahim my-2 my-sm-0" type="submit">Aluminium Industriel</button>
@@ -63,7 +71,7 @@
             <div class='body-home-image'> </div>
             
             <div class='home-main-title' >
-                <h1>Aluminium Industriel</h1>
+                <h1><?php if($type = 'il'){echo 'INOX INDUSTRIEL';}else{echo 'ALUMINIUM INDUSTRIEL';} ?></h1>
                 <h6>
                     <a class='index-link' href="index.html" >Accuile</a> > <a class='index-link' href="#">Aluminium Industriel</a>
                 </h6>
@@ -219,6 +227,6 @@
             </div>
             
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-        </body>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>        
+</body>
     </html>

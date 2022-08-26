@@ -1,6 +1,5 @@
 <?php
     
-    error_reporting(0);
     session_start();
 
         $host = 'localhost';
@@ -19,7 +18,7 @@
             
             if($db){
                 
-                $query1 = "SELECT num_visitors FROM admin;";
+                $query1 = "SELECT num_visitors FROM stats;";
                 $result1 = mysqli_query($connection, $query1);
                 $row1 = mysqli_fetch_array($result1);
                 
@@ -64,6 +63,7 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.php">accueil</a>
                         </li>
+			
                     </ul>
                     <form class="form-inline my-lg-0 ">
                         <a href="home.php?type=al"><input type="button" value="Aluminium Industriel" class="btn my-btn-brahim my-2 my-sm-0" ></a>
@@ -145,9 +145,8 @@
                                                     $result = mysqli_query($connection, $query);
                             
                                                     if($result){
-                                    
-                                                        echo "<script> alert('Article supprime'); </script>";
-                                                        header('Location: dashboard.php');
+                                                        echo "<script>alert('Article supprime'); </script>";
+                                                        header('Location: login.php');
                                                     }
                                                 }
                                             }

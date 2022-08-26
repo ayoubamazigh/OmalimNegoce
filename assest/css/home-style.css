@@ -1,7 +1,7 @@
 *{
     margin: 0rem;
     padding: 0rem;
-    font-family: 'open sans', sans-serif;
+    font-family: 'tajawal', sans-serif;
 }
 
 body{
@@ -17,10 +17,14 @@ body{
     background-size: cover;
 }
 
+ul li a{
+	font-size: .6rem;
+}
+
+
 .home-main-title h1{
     margin-top: 3rem;
     margin-left: 15%;
-    font-family: monospace;
     font-weight: 600;
 }
 
@@ -40,7 +44,6 @@ h6{
 
 .product-title{
     margin-left: 5%;
-    font-family: roboto, sans-serif;
     font-size: 2rem;
     font-weight: 600;
     

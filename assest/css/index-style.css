@@ -1,7 +1,8 @@
 *{
     margin: 0rem;
     padding: 0rem;
-    font-family: 'open sans', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+	font-family: 1.2rem;
 }
 
 body{
@@ -14,26 +15,27 @@ iframe{
    width: 99%;
 }
 
-
 .my-Brand{
-    margin: .5rem;
+	margin: .5rem;
     padding-left: 1rem;
-    font-size: 1.7rem;
-    font-family: 'open sans', sans-serif;
-    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 600;
 }
  
 .my-btn-brahim{
     margin-right: 1rem;
     background-color: orange;
     font-weight: 700;
-    width: 13rem;
-    
+    width: 14rem;
+	font-size: 1.2rem;
 }
 
 .my-btn-brahim:hover{
     background-color: lightgreen;
     box-shadow: 1px 1px rgba(255,255,255,0.2);
+	transform: scale(1.04);
+	transition: .4s;
 }
 
 .bodyimage{
@@ -41,7 +43,7 @@ iframe{
     max-width:2000px;
     min-width: 350px;
     width: 100%;
-    height: 40rem;
+    height: 47rem;
     background-size: cover;
 }
 
@@ -51,30 +53,33 @@ iframe{
     
 }
 
-frame{
-    
+.navbar-nav li a{
+	font-size: 1.4rem;
+	color: white;
 }
 
-
 .my-selector{
+	margin-top: 3rem;
     margin-right: auto;
     margin-left: auto;
-    height: 46rem;
+    height: 45rem;
 }
 
 .selector{
     margin: 2rem auto 0rem auto;
     height: 80%;
     width: 90%;
-    border: 2px solid black;
+    border: 3px solid black;
+	border-radius: 5px;
     box-shadow: 1px 1px 1px black;
-    background-color: rgba(255,255,255,0.7);
+    background-color: white;;
     border-radius: 5px;
-    overflow: hidden;
 }
 
 .selector:hover{
-    box-shadow: 1px 6px 15px black;
+    box-shadow: 5px 6px 15px black;
+	transform: scale(1.03);
+	transition: .5s;
 }
 
 .my-insider-image{
@@ -91,7 +96,6 @@ frame{
     margin-top: 0rem;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'roboto', sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.3rem;
@@ -100,7 +104,7 @@ frame{
 }
 
 a{
-    text-decoration: ;
+    text-decoration: none ;
     color: black;
 }
 
@@ -110,22 +114,19 @@ a:hover{
 .my-desc{
     margin-top: 1rem;
     text-align: center;
-    font-family: 'open sans', sans-serif;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .secondary-title{
-    margin-top: 1rem;
     text-align: center;
-    font-family: sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    box-shadow: 1px 5px 15px;
 }
 
 .my-map{
-    margin-top: 2rem;
+	width: 45%;
+    margin: 1rem;
     border: 1px solid black;
     text-align: center;
     background-color: white;
@@ -136,10 +137,11 @@ a:hover{
 }
 
 .my-definition{
-    margin-top: 2rem;
+	width: 45%;
+    margin: 1rem;
     border: 1px solid black;
     background-color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 4px;
     box-shadow: 1px 5px 15px;
@@ -147,7 +149,6 @@ a:hover{
 
 .copyrightbanner{
     padding: .1rem 0rem;
-    font-family: 'roboto', sans-serif;
     font-weight: 800;
     background-color: orange;
 }
@@ -160,7 +161,6 @@ a:hover{
 
 .my-container-title{
     font-size: 2.6rem;
-    font-family: 'open sans', sans-serif;
     font-weight: 600;
     text-align: center;
 }
@@ -171,16 +171,8 @@ a:hover{
     margin-bottom: 1rem;
     margin-left: auto;
     width: 90%;
-    font-size: 1.5rem;
-    font-weight: 100;
-    font-family: monospace;
-    
-}
-
-.mainer-footer{
-    margin-left: 10%;
-    font-size: 1.2rem;
-    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
     
 }
 
@@ -196,7 +188,6 @@ a:hover{
     height: 100%;
     text-align: center;
     color: white;
-    font-family: monospace;
     font-size: 1.5rem;
 }
 
@@ -225,7 +216,6 @@ a:hover{
     margin-top: 1rem;
     margin-left: 10%;
     text-align: left;
-    font-family: 'open sans', sans-serif;
     font-size: 1.1rem;
 }
 
@@ -233,7 +223,6 @@ a:hover{
     margin-top: 1rem;
     margin-left: 10%;
     text-align: left;
-    font-family: 'open sans', sans-serif;
     font-size: 1.1rem;
 }
 

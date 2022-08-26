@@ -12,8 +12,12 @@ CREATE TABLE Article(
 
 CREATE TABLE Admin(
     username VARCHAR(10),
-    password VARCHAR(25),
-    num_visitors INT
+    password VARCHAR(25)
 )ENGINE = INNODB;
 
-insert into admin values('admin', 'admin', 0);
+create table stats(
+	num_visitors int
+)ENGINE = INNODB;
+
+insert into admin values ('omalimnegoce@gmail.com', 'adminpass');
+insert into stats values (1);

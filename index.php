@@ -1,59 +1,59 @@
 <!DOCTYPE HTML>
-
-    <html lang='fr'>
-        <head>
-            <title>OMALIMNEGOCE.com</title>
-            <meta charset='utf-8' />
-        </head>
-        <link rel='icon' href='' >
-        <link href="assest/css/bootstrap.css" rel="stylesheet" >
-        <link href='assest/css/index-style.css' rel='stylesheet'>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">        
-        
-        <body>
-                
+	<html lang='fr'>
+		<head>
+			<title>OMALIMNEGOCE.com</title>
+			<meta charset='utf-8' />
+			<link rel='icon' href='' >
+        	<link href="assest/css/bootstrap.css" rel="stylesheet" >
+        	<link href='assest/css/index-style.css' rel='stylesheet'>
+        	<link rel="preconnect" href="https://fonts.gstatic.com">
+        	<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;800&display=swap" rel="stylesheet">
+        	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet"> 
+			<link rel="shortcut icon" href='assest/img/20210614_150512.png' />
+		</head>
+		
+        <body>   
             <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse justify-content-between navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand my-Brand" href="index.php">OMALIM NEGOCE sarl</a>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-            <a class="nav-link" href="index.php">accueil</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse justify-content-between navbar-collapse" id="navbarTogglerDemo01">
+					<a class="navbar-brand my-Brand" href="index.php">OMALIM NEGOCE sarl</a>
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.php">accueil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#notreservices">notre services</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#notreservices">notre services</a>
+						<li class="nav-item">
+							<a class="nav-link " href="#contacternos">contacter nos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#contacternos">contacter nos</a>
-                        </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#Proposdenous">à Propos de nous</a>
-                        </li>
-        </ul>
-                    <form class="form-inline my-lg-0 ">
+						<li class="nav-item">
+							<a class="nav-link " href="#Proposdenous">à Propos de nous</a>
+						</li>
+					</ul>
+					<form class="form-inline my-lg-0 ">
                         <a href="home.php?type=al"><input type="button" value="Aluminium Industriel" class="btn my-btn-brahim my-2 my-sm-0" ></a>
                         <a href="home.php?type=in"><input type="button" value='Inox Industriel' class="btn my-btn-brahim my-2 my-sm-0 " ></a>
-                    </form>
-                </div>
-            </nav>
+					</form>
+				</div>
+			</nav>
             
-            <div class='bodyimage'>
-                <div class='containerb-0 '>
-                    <div class='row my-selector-holder'>
-                        <div class='col-lg-6 col-md-12 col-sm-12 my-selector' >
+			<div class='bodyimage'>
+				<div class='containerb-0 '>
+					<div class='row my-selector-holder'>
+						<div class='col-lg-6 col-md-12 col-sm-12 my-selector' >
                             <div class='selector' >
                                 <div class='my-insider-image' >
-                                    <img class="my-insider-image" src="assest/img/al.jpg" >
-                                    <div class="my-title" >
+									<img class="my-insider-image" src="assest/img/al.jpg" >
+									<div class="my-title" >
                                         <a href="home.php?type=al" >aluminium industriel</a>
                                     </div>
                                     <div class='my-desc' >
-                                        tout les travaux concernent l'aluminium et PVC, fabrication des fenêtre, portes... avec une bonne qualité, et meilleur prix, qui correspond à vos besoins.
+										tout les travaux concernent l'aluminium et PVC, fabrication des fenêtre, portes... avec une bonne qualité, et meilleur prix, qui correspond à vos besoins.
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                         <div class='col-lg-6 col-md-12 col-sm-12 my-selector' >
                             <div class='selector' >
                                 <div class='my-insider-image' > 
-                                    <img class="my-insider-image" src="assest/img/test.jpg" >
+									<img class="my-insider-image" src="assest/img/test.jpg" >
                                     <div class="my-title" >
                                         <a href="home.php?type=in">inox industriel</a>
                                     </div>
@@ -74,30 +74,21 @@
                     </div>
                 </div>
             
-                <div class='secondary-title' >
-                    QUI SOMMES-NOUS ?
-                </div>
-                <div class='container'>
+                <div class='container w-100'>
                     <div class='row'>
-                        <div class='col-12 my-definition' >
-                            <center><img class="my-logo-image" src="assest/img/20210614_150512.png" ></center>
+                        <div class='col-6 my-definition' >
+							<div class='secondary-title' >QUI SOMMES-NOUS ?</div>
+							<hr />
+							<center><img class="my-logo-image" src="assest/img/20210614_150512.png" ></center>
                             <div class='my-container-title' >OMALIM NEGOCE sarl</div>
                             <div class='my-container-desc'>
-                                &nbsp; &nbsp;OMALIM NEGOCE SARL, basée à Tikouine Agadir, est une entreprise Marocain privée Spécialisé dans les services suivants :
+                                &nbsp; &nbsp;OMALIM NEGOCE SARL, basée à Tikouine Agadir, est une entreprise Marocain privée Spécialisé dans la fabrication de produits aluminium et inox: Chaudronnerie acier et inox, Menuiserie Métallique, Menuiserie aluminium et P.V.C, Equipement pièce et maintenances chauds et froids, Vente et installation climatiseur...
                             </div>
-                            <ul class='mainer-footer'>
-                                <li>Tous travaux d'inox.</li>
-                                <li>Chaudronnerie acier et inox. </li>
-                                <li>Menuiserie Métallique. </li>
-                                <li>Menuiserie aluminium et P.V.C. </li>
-                                <li>Equipement pièce et maintenances chauds et froids</li>
-                                <li>Vente et installation climatiseur</li>
-                            </ul>
                         </div>
-                        <div class='col-12 my-map' >
+                        <div class='col-6 my-map' >
                             <div>Localisation</div>
                             <hr />
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6426.9375213361745!2d-9.517107954420675!3d30.378169432547985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c86fa3745dd5%3A0x6363b6687528b15d!2sAssaka%2C%20Dcheira%20El%20Jihadia%2080000!5e1!3m2!1sen!2sma!4v1623754064333!5m2!1sen!2sma" width="500" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6426.9375213361745!2d-9.517107954420675!3d30.378169432547985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c86fa3745dd5%3A0x6363b6687528b15d!2sAssaka%2C%20Dcheira%20El%20Jihadia%2080000!5e1!3m2!1sen!2sma!4v1623754064333!5m2!1sen!2sma" width="500" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
